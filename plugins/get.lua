@@ -42,10 +42,10 @@ end
 
 return {
   description = "Retrieves variables saved with !set", 
-  usage = "!get (value_name): Returns the value_name value.",
+  usage = "get (value_name): Returns the value_name value.",
   patterns = {
-    "^(!get) (.+)$",
-    "^!get$"
+    "^(get) (.+)$",
+    "^get$"
   },
   run = run
 }
