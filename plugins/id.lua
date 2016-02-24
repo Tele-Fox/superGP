@@ -76,16 +76,16 @@ end
 return {
    description = "Know your id or the id of a chat members.",
    usage = {
-      "!id: Return your ID and the chat id if you are in one.",
-      "!ids chat: Return the IDs of the current chat members.",
-      "!ids chat <chat_id>: Return the IDs of the <chat_id> members.",
-      "!id <username> : Return the id from username given."
+      "id: Return your ID and the chat id if you are in one.",
+      "ids chat: Return the IDs of the current chat members.",
+      "ids chat <chat_id>: Return the IDs of the <chat_id> members.",
+      "id <username> : Return the id from username given."
    },
    patterns = {
-      "^!id$",
-      "^!ids? (chat) (%d+)$",
-      "^!ids? (chat)$",
-      "^!id (.*)$"
+      "^id$",
+      "^ids? (chat) (%d+)$",
+      "^ids? (chat)$",
+      "^id (.*)$"
    },
    run = run
 }
