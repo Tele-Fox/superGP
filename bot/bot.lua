@@ -218,7 +218,6 @@ function create_config( )
       "hello",
       "help",
       "id",
-      "invite,
       "moderation",
       "plugins",
       "set",
