@@ -1,6 +1,6 @@
 local function save_value(msg, name, value)
   if (not name or not value) then
-    return "Usage: !set var_name value"
+    return "Usage: set var_name value"
   end
   
   local hash = nil
@@ -28,7 +28,7 @@ return {
   description = "Plugin for saving values. get.lua plugin is necessary to retrieve them.", 
   usage = "!set [value_name] [data]: Saves the data with the value_name name.",
   patterns = {
-   "!set ([^%s]+) (.+)$"
+   "set ([^%s]+) (.+)$"
   }, 
   run = run 
 }
