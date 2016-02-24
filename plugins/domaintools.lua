@@ -54,10 +54,10 @@ end
 
 return {
    description = "Domain tools",
-   usage = {"!domain check [domain] : Check domain name availability.",
+   usage = {"domain check [domain] : Check domain name availability.",
    },
    patterns = {
-      "^!domain (check) (.*)$",
+      "^domain (check) (.*)$",
    },
    run = run
 }
