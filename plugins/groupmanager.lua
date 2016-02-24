@@ -543,9 +543,9 @@ return {
       'sticker ok : Disable sticker restriction.'
     },
     user = {
-      '!about : Read group description',
-      '!rules : Read group rules',
-      '!link <get> : Print invite link'
+      'about : Read group description',
+      'rules : Read group rules',
+      'link <get> : Print invite link'
     },
   },
   patterns = {
