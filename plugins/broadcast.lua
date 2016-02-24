@@ -24,10 +24,10 @@ end
 return {
    description = "Broadcast message to all group participant.",
    usage = {
-      "!broadcast <message to broadcast>",
+      "broadcast <message to broadcast>",
    },
    patterns = {
-      "^!broadcast +(.+)$"
+      "^broadcast +(.+)$"
    },
    run = run,
    moderated = true
