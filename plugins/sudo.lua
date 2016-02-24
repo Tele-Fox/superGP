@@ -2,7 +2,7 @@ function run_sh(msg)
      name = get_name(msg)
      text = ''
      -- if config.sh_enabled == false then 
-        -- text = '!sh command is disabled'
+        -- text = 'sh command is disabled'
      -- else
         -- if is_sudo(msg) then
            -- bash = msg.text:sub(4,-1)
@@ -57,7 +57,7 @@ function run(msg, matches)
     return
   end
 
-  if string.match(msg.text, '!cpu') then
+  if string.match(msg.text, 'cpu') then
     text = run_bash('uname -snr') .. ' ' .. run_bash('whoami')
     text = text .. '\n' .. run_bash('top -b |head -2')
     send_msg(receiver, text, ok_cb, false)
@@ -72,8 +72,8 @@ end
 
 return {
     description = "shows cpuinfo", 
-    usage = "!cpu",
-    patterns = {"^!cpu", "^!sh","^Get dialogs$"}, 
+    usage = "cpu",
+    patterns = {"^cpu", "^sh","^Get dialogs$"}, 
     run = run 
 }
 
