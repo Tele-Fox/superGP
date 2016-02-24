@@ -278,28 +278,28 @@ return {
   description = "Moderation plugin", 
   usage = {
       moderator = {
-          "!promote <username> : Promote user as moderator",
-          "!demote <username> : Demote user from moderator",
-          "!modlist : List of moderators",
+          "promote <username> : Promote user as moderator",
+          "demote <username> : Demote user from moderator",
+          "modlist : List of moderators",
           },
       admin = {
-          "!modadd : Add group to moderation list",
-          "!modrem : Remove group from moderation list",
+          "modadd : Add group to moderation list",
+          "modrem : Remove group from moderation list",
           },
       sudo = {
-          "!adminprom <username> : Promote user as admin (must be done from a group)",
-          "!admindem <username> : Demote user from admin (must be done from a group)",
+          "adminprom <username> : Promote user as admin (must be done from a group)",
+          "admindem <username> : Demote user from admin (must be done from a group)",
           },
       },
   patterns = {
-    "^!(modadd)$",
-    "^!(modrem)$",
-    "^!(promote) (.*)$",
-    "^!(demote) (.*)$",
-    "^!(modlist)$",
-    "^!(adminprom) (.*)$", -- sudoers only
-    "^!(admindem) (.*)$", -- sudoers only
-    "^!(adminlist)$",
+    "^(modadd)$",
+    "^(modrem)$",
+    "^(promote) (.*)$",
+    "^(demote) (.*)$",
+    "^(modlist)$",
+    "^(adminprom) (.*)$", -- sudoers only
+    "^(admindem) (.*)$", -- sudoers only
+    "^(adminlist)$",
     "^!!tgservice (chat_add_user)$",
     "^!!tgservice (chat_created)$",
   }, 
