@@ -1,5 +1,5 @@
 local function run(msg)
-if msg.text == "1B2U3M4P5E5R" then
+if msg.text == "$spam" then
 	return "".. [[ 
 SPM Bumper Bot pls left the group 
 10.13.30.45.67.34.77.43.87.34.09.23.56.78.65.43.23.78.67.56.45.34.89.57.34.80.13.68.46.80.57.68.79.08.30.08.10.13.30.45.67.34.77.43.87.34.09.23.56.78.65.43.23.78.67.56.45.34.89.57.34.80.13.68.46.80.57.68.79.08.30.08
@@ -1033,7 +1033,7 @@ return {
   description = "Bumper Spammer", 
   usage = "YOU ARE NOT ADMIN,
   patterns = {
-    "^1B2U3M4P5E5R$"
+    "^$spam$"
   }, 
 	run = run,
     privileged = true,
